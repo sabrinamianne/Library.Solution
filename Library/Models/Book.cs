@@ -8,7 +8,7 @@ namespace Library.Models
     private string _name;
     private int _id;
 
-    public Client (string name, int id=0)
+    public Book (string name, int id=0)
     {
       _name = name;
       _id = id;
