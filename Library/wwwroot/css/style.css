@@ -16,6 +16,15 @@
   margin-right: 180px;
 }
 
+a {
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  color: #9099a8;
+}
+
 .button_home {
   font-size: 22px;
   height: 45px;
@@ -44,14 +53,4 @@ body {
 
 text-align:center;
 
-}
-
-#main {
-
-max-width:1300px;
-min-height:100%;
-margin:0 auto;
-position:relative;
-padding-bottom: 20px;
-margin-left: 1px;
 }

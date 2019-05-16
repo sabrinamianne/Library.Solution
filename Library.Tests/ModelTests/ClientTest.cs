@@ -122,6 +122,7 @@ namespace Library.TestTools
 
       testClient.Edit(secondClient);
       string result = Client.Find(testClient.GetId()).GetName();
+      Assert.AreEqual(secondClient, result);
     }
 
 

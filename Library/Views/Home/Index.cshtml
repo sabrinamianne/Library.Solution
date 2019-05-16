@@ -7,7 +7,7 @@
   <div class="row justify-content-around">
     <div class="col-md-6">
       <h1>LIBRARIAN</h1><br><br>
-        <form action="/librarians" method="post">
+        <form action="/librarians" method="get">
           <h4>
           <label for="librarianName">Your Name</label>
           <input id='librarianName' name='clientName' type='text' placeholder="David Jones"><br>
@@ -26,17 +26,16 @@
         <label for="password_librarian"> Password : </label>
         <input type="password" name="password_librarian" maxlength="5" size="5"><br><br>
         <button class="button_home" type="submit">Valid</button><br><br>
-        <h4>If you don't have any account, create your client account here:</h4><br>
-        <h4>
-        <label for='clientName'>Client Name : </label><br>
-        <input id='clientName' name='clientName' type='text' placeholder="David Jones" required><br><br>
-        <label for='client_email'>Your Email</label><br>
-        <input type="email" name="client_email"><br><br>
-        <label for="password_librarian"> Create a password : </label>
-        <p><small> Use 5 characters with a mix of letters, numbers</small></p>
-        <input type="password" name "password_librarian" maxlength="5" size="5"><br><br></h4>
-        <h3><button class="button_home" type='submit'>Create my Account</button></h3><br>
+        <h4>If you don't have any account, <a href='/clients/new'>create your client account here</a></h4><br>
       </form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      </div>
     </div>
   </div>
 </div>

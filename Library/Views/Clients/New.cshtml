@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>CREATE YOUR ACCOUNT</h1><br><br>
+      <form class="form" action='/clients' method='post'><h4>
+        <label for='clientName'>Client Name : </label><br>
+        <input id='clientName' name='clientName' type='text' placeholder="David Jones" required><br><br>
+        <label for='client_email'>Your Email</label><br>
+        <input type="email" name="client_email"><br><br>
+        <label for="password_librarian"> Create a password : </label>
+        <p><small> Use 5 characters with a mix of letters, numbers</small></p>
+        <input type="password" name "password_client" maxlength="5" size="5"><br><br></h4>
+        <h3><button class="button_home" type='submit'>Create my Account</button></h3><br><br>
+        <h2><a href='/'>Home</a></h2>
+      </form>
+    </div>
+  </div>
+</div>
