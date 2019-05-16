@@ -1,1 +1,57 @@
+#background {
 
+  font-family: inherit;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.jumbotron {
+  background-color: #fff4f4;
+  color:#4c2e2e;
+  font-family: fantasy;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.button_home {
+  font-size: 22px;
+  height: 45px;
+  background-color: #e8d5d5;
+  color: black;
+
+}
+
+.footer {
+  background-color:#fff4f4;
+  bottom:0;
+  padding-top:10px;
+  padding-bottom: 1px;
+  height:40px;
+
+}
+
+*{
+margin:0;
+padding:0;
+}
+
+body, html{height:100%;}
+
+body {
+
+text-align:center;
+
+}
+
+#main {
+
+max-width:1300px;
+min-height:100%;
+margin:0 auto;
+position:relative;
+padding-bottom: 20px;
+margin-left: 1px;
+}

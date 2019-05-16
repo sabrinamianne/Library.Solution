@@ -7,6 +7,10 @@ namespace Library.Controllers
   public class HomeController : Controller
   {
     [HttpGet("/")]
-    return View();
+    public ActionResult Index()
+    {
+      return View();
+    }
+
   }
 }
