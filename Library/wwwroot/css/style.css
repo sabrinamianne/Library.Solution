@@ -30,7 +30,20 @@ a:hover {
   height: 45px;
   background-color: #e8d5d5;
   color: black;
+}
 
+.button_delete {
+  font-size: 22px;
+  height: 30px;
+  background-color: #f1eaf2;
+  color:#b2250c;
+}
+
+.button_basic {
+  font-size: 22px;
+  height: 45px;
+  background-color: #e8d5d5;
+  color:black;
 }
 
 .footer {

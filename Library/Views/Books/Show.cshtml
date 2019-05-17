@@ -5,8 +5,10 @@
 <div class="container">
   <div class="row justify-content-around">
     <div class="col-md-12">
-      <h1>Edit @Model.GetName()</h1><br><br>
-      <a href='/books/@Model.GetId()/edit'>Edit this Item</a>
+      <h1>@Model.GetName()</h1>
+      <h2>Number of Copies = Count of Copies </h2>
+      <h2><a href='/books/@Model.GetId()/edit'>Edit this Item</a></h2><br><br>
+      <h2><a href='/books'>Book's List</a></h2>
     </div>
   </div>
 </div>

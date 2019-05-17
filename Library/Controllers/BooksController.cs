@@ -9,15 +9,17 @@ namespace Library.Controllers
     [HttpGet("/books")]
     public ActionResult Index()
     {
-
-      return View();
+      List<Book> allBooks = Book.GetAll();
+      return View(allBooks);
     }
 
     [HttpPost("/books")]
     public ActionResult Create(string bookName)
     {
       Book newBook = new Book(bookName);
-      return View("Index");
+      newBook.Save();
+      List<Book> allBooks = Book.GetAll();
+      return View("Index", allBooks);
     }
 
     [HttpGet("books/new")]
@@ -46,6 +48,14 @@ namespace Library.Controllers
       Book selectedBook = Book.Find(bookId);
       selectedBook.Edit(newName);
       return View("Show",selectedBook);
+    }
+
+    [ActionName("Destroy"), HttpPost("/books/{bookId}/delete")]
+    public ActionResult Destroy(int bookId)
+    {
+      Book book = Book.Find(bookId);
+      book.Delete();
+      return RedirectToAction("Index");
     }
 
   }

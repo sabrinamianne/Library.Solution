@@ -9,8 +9,7 @@ namespace Library.Controllers
     [HttpGet("/clients")]
     public ActionResult Index()
     {
-      List<Client> allClients = Client.GetAll();
-      return View(allClients);
+      return View();
     }
 
     [HttpPost("/clients")]
@@ -18,8 +17,7 @@ namespace Library.Controllers
     {
       Client newClient = new Client(clientName);
       newClient.Save();
-      List<Client> allClients = Client.GetAll();
-      return View ("Index", allClients);
+      return View ("Index", newClient);
     }
 
     [HttpGet("clients/new")]

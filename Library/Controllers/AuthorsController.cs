@@ -9,15 +9,17 @@ namespace Library.Controllers
     [HttpGet("/authors")]
     public ActionResult Index()
     {
-
-      return View();
+      List<Author> allAuthors = Author.GetAll();
+      return View(allAuthors);
     }
 
     [HttpPost("/authors")]
     public ActionResult Create(string authorName)
     {
       Author newAuthor = new Author (authorName);
-      return View("Index");
+      newAuthor.Save();
+      List<Author> allAuthors = Author.GetAll();
+      return View("Index",allAuthors);
     }
 
     [HttpGet("authors/new")]

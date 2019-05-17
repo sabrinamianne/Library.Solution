@@ -5,9 +5,11 @@
 <div class="container">
   <div class="row justify-content-around">
     <div class="col-md-12">
-      <h1>Edit @Model.GetName()</h1><br><br>
-
-      <a href='/authors/@Model.GetId()/edit'>Edit this Item</a>
+      <h1>@Model.GetName()</h1>
+      <h2>Future List of Books</h2>
+      <h2><a href='/authors/@Model.GetId()/edit'>Edit this Item</a></h2><br><br>
+      <h2><a href='/authors'>Author's List</a></h2>
+      <h2><a href='/'>Home</a></h2>
     </div>
   </div>
 </div>
